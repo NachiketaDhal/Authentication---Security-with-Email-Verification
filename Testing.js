@@ -126,7 +126,7 @@ app.post("/register", function(req, res){
           service: 'gmail',
           auth: {
               user: 'nachiketadhal.99@gmail.com',
-              pass: 'Nachi@123'
+              pass: '********'
           }
       });
 
