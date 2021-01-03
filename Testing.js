@@ -70,8 +70,8 @@ app.post("/verify", function(req, res){
     //   res.redirect("/verify");
     // }
     if(!foundUser){
-      // res.send("Are you sure you've entered the correct token?");
-      res.redirect("/");
+      res.send("Are you sure you've entered the correct token?");
+      // res.redirect("/");
     }
     foundUser.active = true;
     foundUser.secrettoken = ""; // These two lines mean user has been verified
@@ -126,7 +126,7 @@ app.post("/register", function(req, res){
           service: 'gmail',
           auth: {
               user: 'nachiketadhal.99@gmail.com',
-              pass: 'Nachi@123'
+              pass: '********'
           }
       });
 
